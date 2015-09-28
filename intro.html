@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Unica</title>
+	<meta name="description" content="One-page responsive VC HTML template">
+	<meta name="keywords" content="template, clean, responsive, one-page, creative, vc">
+	<meta name="author" content="Alex Ilin">
+
+	<!-- Normalize CSS-->
+	<link rel="stylesheet" href="styles/normalize.css">
+
+	<!-- Google Fonts-->
+	<link href="http://fonts.googleapis.com/css?family=Roboto+Mono:400,400italic,700italic,700%7CNothing+You+Could+Do" rel="stylesheet">
+
+	<link rel="stylesheet" href="styles/main.css">
+
+	<style>
+	.main-header .main-header-inner {
+		padding: 0;
+	}
+	.screens {
+		text-align: center;
+	}
+	.screens .screens-item {
+		position: relative;
+		display: inline-block;
+		width: 300px;
+		height: 294px;
+		margin: 0 30px 30px;
+		background: url('data:image/jpg;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAAD0CAYAAAAhZxuDAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMDY3IDc5LjE1Nzc0NywgMjAxNS8wMy8zMC0yMzo0MDo0MiAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTUgKFdpbmRvd3MpIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOkRGRjU4QUJENERCNjExRTU5QzhBRkE4QzRERTc5MDI0IiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOkRGRjU4QUJFNERCNjExRTU5QzhBRkE4QzRERTc5MDI0Ij4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6REZGNThBQkI0REI2MTFFNTlDOEFGQThDNERFNzkwMjQiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6REZGNThBQkM0REI2MTFFNTlDOEFGQThDNERFNzkwMjQiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz47snIRAAAOGklEQVR42uzd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') 0 0 no-repeat;
+	}
+	.screens .screens-item a {
+		display: block;
+		height: 158px;
+		margin: 10px 10px 0;
+		background-position: 50% 0;
+		background-repeat: no-repeat;
+		background-size: cover;
+		transition: 10s linear;
+	}
+	.screens .screens-item a:hover {
+		background-position: 50% 100%;
+	}
+	</style>
+</head>
+
+<body>
+
+	<div class="wrapper">
+
+		<!-- BEGIN HEADER-->
+		<header id="intro" class="main-header section section-bg-dark section-bg-overlay section-bottom-rise">
+			<div class="section-inner">
+
+				<div class="container">
+
+					<div class="main-header-inner">
+						<div class="heading">
+							<h1>Unica</h1>
+							<h3>Personal One-page HTML5 Template</h3>
+						</div>
+
+					</div>
+
+				</div>
+
+			</div>
+		</header>
+		<!-- END HEADER-->
+
+		<section id="schemes" class="section">
+			<div class="section-inner">
+				<div class="container">
+					<header class="heading">
+						<h2>Choose color scheme</h2>
+						<div class="separator"></div>
+					</header>
+					<div class="screens">
+						<div class="screens-item"><a target="_blank" href="http://alexilin.ru/demo/unica/" style="background-image: url(http://alexilin.ru/demo/unica/screens/shot-1.jpg)"></a></div>
+						<div class="screens-item"><a target="_blank" href="http://alexilin.ru/demo/unica/index.html?scheme=scheme-2" style="background-image: url(http://alexilin.ru/demo/unica/screens/shot-2.jpg)"></a></div>
+						<div class="screens-item"><a target="_blank" href="http://alexilin.ru/demo/unica/index.html?scheme=scheme-3" style="background-image: url(http://alexilin.ru/demo/unica/screens/shot-3.jpg)"></a></div>
+						<div class="screens-item"><a target="_blank" href="http://alexilin.ru/demo/unica/index.html?scheme=scheme-4" style="background-image: url(http://alexilin.ru/demo/unica/screens/shot-4.jpg)"></a></div>
+						<div class="screens-item"><a target="_blank" href="http://alexilin.ru/demo/unica/index.html?scheme=scheme-5" style="background-image: url(http://alexilin.ru/demo/unica/screens/shot-5.jpg)"></a></div>
+						<div class="screens-item"><a target="_blank" href="http://alexilin.ru/demo/unica/index.html?scheme=scheme-6" style="background-image: url(http://alexilin.ru/demo/unica/screens/shot-6.jpg)"></a></div>
+						<div class="screens-item"><a target="_blank" href="http://alexilin.ru/demo/unica/index.html?scheme=scheme-7" style="background-image: url(http://alexilin.ru/demo/unica/screens/shot-7.jpg)"></a></div>
+						<div class="screens-item"><a target="_blank" href="http://alexilin.ru/demo/unica/index.html?scheme=scheme-8" style="background-image: url(http://alexilin.ru/demo/unica/screens/shot-8.jpg)"></a></div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+	</div>
+
+	<!-- jQuery-->
+	<script src="scripts/jquery.min.js"></script>
+
+</body>
+
+</html>
