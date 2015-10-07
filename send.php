@@ -17,7 +17,7 @@
 
 		$recipient = "brendenmartin1987@yahoo.com"; // Replace this address with yours.
 
-		$subject = "Mail from your site";
+		$subject = "Mail from BrendenMartin.com";
 
 		$email_content = "Name: $name\n";
 		$email_content .= "Email: $email\n\n";
